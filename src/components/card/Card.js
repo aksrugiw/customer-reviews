@@ -4,20 +4,21 @@ import StarBar from '../star-bar/StarBar';
 
 import './Card.css';
 
-function Card() {
+function Card({ reviews }) {
+  const points = getReviewPoints(reviews);
   return (
     <div className="Card">
       <h3 className="Card-title">Customer Reviews</h3>
       <div className="Card-subheader">
         <div className="Card-review-stars">
-          <StarBar points={Math.ceil(2.7)} />
+          <StarBar points={Math.floor(points)} />
         </div>
         <div className="Card-review-points">
-          <span>4.7 out of 5</span>
+          <span>{points} out of 5</span>
         </div>
       </div>
       <div className="Card-ratings-count">
-        <span>40 customer ratings</span>
+        <span>{reviews.length} customer ratings</span>
       </div>
       <section className="Card-sum-up">
         <ProgressBar />
@@ -32,5 +33,10 @@ function Card() {
     </div>
   );
 }
+
+const getReviewPoints = (reviews) => {
+  const sum = reviews.reduce((acc, curr) => acc + curr);
+  return sum / reviews.length;
+};
 
 export default Card;
