@@ -1,0 +1,32 @@
+.ProgressBar {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.ProgressBar-bg {
+  background: #f5f8ff;
+  border-radius: 18px;
+  width: 280px;
+  height: 16px;
+  position: relative;
+  margin: 20px 12px;
+}
+
+.ProgressBar-fill {
+  background: #ffcc48;
+  box-shadow: 0px 4px 10px rgba(255, 204, 72, 0.53);
+  border-radius: 18px;
+  width: 246px;
+  height: 16px;
+  position: absolute;
+}
+
+.ProgressBar-label {
+  color: #2a5bda;
+}
+
+.ProgressBar-percent {
+  color: #323357;
+}

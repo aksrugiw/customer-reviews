@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+.Card {
+  font-family: Muli;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 547px;
+  height: 602px;
+  left: 20%;
+  top: 10%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(193, 211, 251, 0.5);
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+
+.Card-title {
+  font-size: 32px;
+  color: #323357;
+  margin: 0 0 20px;
+}
+
+.Card-subheader {
+  background: #f5f8ff;
+  border-radius: 40px;
+  width: 70%;
+  height: 63px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Card-review-stars {
+  width: 53%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card-review-points {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #323357;
+}
+
+.Card-ratings-count {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #595b71;
+  margin-top: 5px;
+}
+
+.Card-sum-up {
+  margin: 30px auto 0;
+}
+
+.Card-footer {
+  margin-top: 20px;
+}
+
+.Card-footer a {
+  font-size: 16px;
+  line-height: 20px;
+  color: #2a5bda;
+  text-decoration: none;
+}
