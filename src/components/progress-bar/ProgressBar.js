@@ -1,14 +1,14 @@
 import './ProgressBar.css';
 import React from 'react';
 
-function ProgressBar() {
+function ProgressBar({ point, pointStats }) {
   return (
     <div className="ProgressBar">
-      <span className="ProgressBar-label">5 star</span>
+      <span className="ProgressBar-label">{point} star</span>
       <div className="ProgressBar-bg">
-        <div className="ProgressBar-fill"></div>
+        <div className="ProgressBar-fill" style={{ width: pointStats + '%' }}></div>
       </div>
-      <div className="ProgressBar-percent">84%</div>
+      <div className="ProgressBar-percent">{pointStats}%</div>
     </div>
   );
 }
