@@ -1,7 +1,7 @@
 import './ProgressBar.css';
 import React from 'react';
 
-export default function ProgressBar() {
+function ProgressBar() {
   return (
     <div className="ProgressBar">
       <span className="ProgressBar-label">5 star</span>
@@ -12,3 +12,5 @@ export default function ProgressBar() {
     </div>
   );
 }
+
+export default ProgressBar;

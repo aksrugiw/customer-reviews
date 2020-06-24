@@ -1,0 +1,8 @@
+.StarBar {
+  position: relative;
+}
+
+.StarBar-filled {
+  position: absolute;
+  top: 0;
+}
