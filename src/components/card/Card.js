@@ -7,7 +7,7 @@ import './Card.css';
 function Card({ reviews }) {
   const points = getReviewPoints(reviews);
   return (
-    <div className="Card">
+    <div className="Card" data-testid="card">
       <h3 className="Card-title">Customer Reviews</h3>
       <div className="Card-subheader">
         <div className="Card-review-stars">
