@@ -1,5 +1,5 @@
 import React from 'react';
-import Star from '../star/Star';
+import Star from './Star/Star';
 
 import './StarBar.css';
 

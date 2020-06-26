@@ -1,6 +1,6 @@
 import React from 'react';
-import ProgressBar from '../progress-bar/ProgressBar';
-import StarBar from '../star-bar/StarBar';
+import ProgressBar from '../ProgressBar/ProgressBar';
+import StarBar from '../StarBar/StarBar';
 
 import './Card.css';
 
